@@ -1,0 +1,9 @@
+# Updated requirements.txt with pre-compiled packages
+Flask==2.3.3
+Werkzeug==2.3.7
+scikit-learn
+numpy
+pandas
+flask-cors==4.0.0
+python-dotenv>=1.0.1
+gunicorn==21.2.0

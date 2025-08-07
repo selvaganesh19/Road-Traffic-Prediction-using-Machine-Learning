@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚦 Smart Traffic Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1>🚦 Smart Traffic Predictor</h1>
+            <p>🎯 Advanced AI-Powered Traffic Flow Analysis & Prediction System</p>
+            <div class="traffic-lights">
+                <div class="traffic-light red"></div>
+                <div class="traffic-light yellow"></div>
+                <div class="traffic-light green"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Navigation -->
+        <div class="dashboard-nav">
+            <button class="nav-btn active" onclick="showSection('prediction')" id="nav-prediction">
+                🔮 Traffic Prediction
+            </button>
+            <button class="nav-btn" onclick="showSection('analytics')" id="nav-analytics">
+                📊 Analytics Dashboard
+            </button>
+            <button class="nav-btn" onclick="showSection('graphs')" id="nav-graphs">
+                📈 Visual Analytics
+            </button>
+        </div>
+
+        <!-- Prediction Section -->
+        <div id="prediction-section" class="section active">
+            <div class="card">
+                <h2>🎯 Full Day Traffic Prediction Engine</h2>
+                <form id="predictForm">
+                    <div class="prediction-form">
+                        <div class="form-group">
+                            <label>📅 Day of Week:</label>
+                            <select name="day_of_week" required>
+                                <option value="Monday" selected>Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>🌤️ Season:</label>
+                            <select name="season" required>
+                                <option value="Spring" selected>🌸 Spring</option>
+                                <option value="Summer">☀️ Summer</option>
+                                <option value="Autumn">🍂 Autumn</option>
+                                <option value="Winter">❄️ Winter</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>📍 Location Zone:</label>
+                            <select name="location" required>
+                                <option value="East" selected>🌅 East Zone</option>
+                                <option value="West">🌇 West Zone</option>
+                                <option value="North">🧭 North Zone</option>
+                                <option value="South">🗺️ South Zone</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="predict-btn" id="predictBtn">
+                        🚀 Generate Traffic Prediction
+                    </button>
+                </form>
+            </div>
+
+            <!-- Results Display -->
+            <div id="results-container" class="results-container">
+                <div class="card">
+                    <h2 id="results-title">📊 Hourly Traffic Analysis Results</h2>
+                    <div id="hourly-predictions" class="hourly-predictions">
+                        <!-- Hourly predictions will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analytics Section -->
+        <div id="analytics-section" class="section">
+            <div class="card">
+                <h2>📊 Traffic Analytics Intelligence Center</h2>
+                <div id="analytics-content">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <span>Loading comprehensive analytics...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Graphs Section -->
+        <div id="graphs-section" class="section">
+            <div class="card">
+                <h2>📈 Advanced Visual Traffic Analytics</h2>
+                <div class="dashboard-nav" style="margin-bottom: 25px;">
+                    <button class="nav-btn" onclick="loadGraphs()">🔄 Refresh Analytics</button>
+                </div>
+                <div id="graphs-content">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <span>Generating advanced visualizations...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
