@@ -284,18 +284,6 @@ def generate_graphs():
 print("🚀 Starting Traffic Prediction Server...")
 load_traffic_model()
 
-# Routes
-@app.route('/')
-def index():
-    return send_from_directory(app.static_folder, 'index.html')
-
-@app.route('/style.css')
-def send_css():
-    return send_from_directory(os.path.join(app.static_folder, 'css'), 'style.css')
-
-@app.route('/script.js')
-def send_js():
-    return send_from_directory(os.path.join(app.static_folder, 'js'), 'script.js')
 
 @app.route('/health')
 def health():
