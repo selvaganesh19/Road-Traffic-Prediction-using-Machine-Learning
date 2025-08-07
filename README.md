@@ -28,7 +28,7 @@ Efficient traffic management is essential for modern urban life. This project ai
 ### Prerequisites
 
 - Python 3.7+
-- Node.js & npm (for frontend development)
+- HTML,CSS,JAVA-SCRIPT(for frontend development)
 - [pip](https://pip.pypa.io/en/stable/)
 
 ### 1. Clone the Repository
@@ -79,8 +79,6 @@ To contribute:
 3. Commit your changes (`git commit -am 'Add new feature'`).
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Create a new Pull Request.
-
-Please review the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and follow our [CONTRIBUTING.md](CONTRIBUTING.md) guidelines.
 
 ---
 
