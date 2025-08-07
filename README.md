@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Road-Traffic-Prediction-using-Machine-Learning
 
 Hosted Link - https://www.comet.com/selvaganesh19/road-traffic-prediction/view/new/panels
@@ -91,6 +92,8 @@ This project is licensed under the **MIT** License.
 ---
 🔗 GitHub Repo: https://github.com/selvaganesh19/Road-Traffic-Prediction-using-Machine-Learning
 =======
+=======
+>>>>>>> origin/master
 # Web Machine Learning Application
 
 This project is a web application that utilizes a machine learning model to provide predictions based on user input. The application consists of a frontend built with HTML, CSS, and JavaScript, and a backend powered by Flask that serves the model.
@@ -145,5 +148,9 @@ web-ml-app
 
 ## Contributing
 
+<<<<<<< HEAD
 Feel free to submit issues or pull requests for improvements or bug fixes.
 >>>>>>> 1165131 (Add enhanced traffic prediction web application)
+=======
+Feel free to submit issues or pull requests for improvements or bug fixes.
+>>>>>>> origin/master

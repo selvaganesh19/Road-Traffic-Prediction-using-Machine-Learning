@@ -1,3 +1,7 @@
 # Dataset files - DO NOT COMMIT
 *.csv
+<<<<<<< HEAD
 __pycache__/
+=======
+__pycache__/
+>>>>>>> origin/master
