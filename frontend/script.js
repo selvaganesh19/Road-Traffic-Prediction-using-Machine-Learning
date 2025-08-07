@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('📤 Sending prediction data:', data);
             
             // Make API request
-            const response = await fetch('http://localhost:5000/predict', {
+            const response = await fetch('https://roadtrafficbackend.onrender.com/predict', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         
         try {
-            const response = await fetch('http://localhost:5000/analytics-dashboard');
+            const response = await fetch('https://roadtrafficbackend.onrender.com/analytics-dashboard');
             const data = await response.json();
             
             if (data.success) {
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         
         try {
-            const response = await fetch('http://localhost:5000/graphs');
+            const response = await fetch('https://roadtrafficbackend.onrender.com/graphs');
             const data = await response.json();
             
             if (data.success && data.graph_data) {
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     async function checkServerHealth() {
         try {
-            const response = await fetch('http://localhost:5000/health');
+            const response = await fetch('https://roadtrafficbackend.onrender.com/health');
             if (response.ok) {
                 const health = await response.json();
                 console.log('✅ Server health check passed:', health);
