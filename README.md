@@ -1,79 +1,77 @@
-# Road-Traffic-Prediction-using-Machine-Learning
-
-Hosted Link - https://www.comet.com/selvaganesh19/road-traffic-prediction/view/new/panels
-
-# Road-Traffic-Prediction-using-Machine-Learning
-
 # 🚦 Road-Traffic-Prediction-using-Machine-Learning
 
-Predict road traffic patterns using powerful machine learning techniques. This project provides tools and models to forecast traffic congestion, helping optimize routes, reduce delays, and enhance urban mobility.
+Welcome to **Road-Traffic-Prediction-using-Machine-Learning**! This project leverages the power of machine learning to predict road traffic conditions, enabling smarter city planning and real-time routing recommendations. The system is built with a Flask-based backend and a modern, interactive frontend, providing fast, accurate, and user-friendly traffic forecasts.
+
+---
+## ✅ Link Deployment - https://roadtrafficpred.vercel.app
+
+
+## 📚 Introduction
+
+Efficient traffic management is essential for modern urban life. This project aims to help commuters, planners, and developers by predicting road traffic conditions using advanced machine learning models. By analyzing historical and real-time data, the application provides actionable insights to reduce congestion and optimize travel routes.
 
 ---
 
-## 🌟 Features
+## ✨ Features
 
-- **Multiple ML Algorithms**: Implements a range of machine learning models for robust traffic prediction.
-- **Data Preprocessing**: Utilities for cleaning and transforming raw traffic data.
-- **Visualization Tools**: Insightful plots to analyze traffic trends and model performance.
-- **Extensible Framework**: Easy to add new models or data sources.
-- **User-friendly Interface**: Simple scripts to train, evaluate, and predict.
+- **Machine Learning Powered**: Utilizes advanced ML algorithms for high-accuracy traffic predictions.
+- **RESTful API**: Flask backend with endpoints for prediction and data visualization.
+- **Interactive Frontend**: Clean, user-friendly UI for inputting data and viewing results.
+- **Offline Support**: Progressive Web App features via service workers.
+- **Visual Insights**: Generates and displays traffic trend charts.
+- **Easy Integration**: Modular design allows for customization and extension.
 
 ---
 
-## 🛠️ Installation
+## 🚀 Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/selvaganesh19/Road-Traffic-Prediction-using-Machine-Learning.git
+   git clone https://github.com/your-username/Road-Traffic-Prediction-using-Machine-Learning.git
    cd Road-Traffic-Prediction-using-Machine-Learning
    ```
 
-2. **Create and activate a virtual environment (recommended)**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+### 2. Backend Setup
 
-3. **Install the required dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+cd backend
+pip install -r requirements.txt
+# Ensure your ML model file (e.g. model.pkl) is present in the backend directory
+python app.py
+```
+
+### 3. Frontend Setup
+
+```bash
+cd ../frontend
+# Serve with your preferred static server, e.g.:
+npx serve .
+```
+
+> **Tip:** For offline support and PWA features, make sure to run frontend from a web server!
 
 ---
 
-## 🚀 Usage
+## 📝 Usage
 
-1. **Prepare your data**  
-   Place your traffic data in the `data/` directory or update the configuration files as needed.
-
-2. **Train the model**
-   ```bash
-   python train.py --config configs/default.yaml
-   ```
-
-3. **Make predictions**
-   ```bash
-   python predict.py --input data/new_traffic_data.csv
-   ```
-
-4. **Visualize results**
-   ```bash
-   python visualize.py --results results/predictions.csv
-   ```
-
-*For detailed usage and all available options, refer to the [documentation](docs/USAGE.md) (if available).*
+1. **Start the backend** by running `python app.py` in the `backend` directory.
+2. **Serve the frontend** using a static server (e.g., `npx serve .` inside the `frontend` directory).
+3. **Open your browser** and navigate to the frontend address (e.g., `http://localhost:5000` or as served).
+4. **Input required data** in the prediction form and click **Predict**.
+5. **View traffic predictions and trend charts** instantly.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!  
+To contribute:
 
-1. Fork this repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add SomeFeature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a pull request
+1. Fork the repository.
+2. Create a new feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Create a new Pull Request.
 
 ---
 
@@ -83,71 +81,33 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-*Made with ❤️ for smarter cities and safer roads!*
+> **Made with ❤️ for smarter cities and safer roads!**
+
+---
+
+## 📁 Project Structure
+
+```
+Road-Traffic-Prediction-using-Machine-Learning/
+│
+├── backend/
+│   └── app.py
+│
+├── frontend/
+│   ├── script.js
+│   └── sw.js
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
+---
+
+Feel free to open an issue or submit a PR to help us improve! 🚗💨
 
 ## License
 This project is licensed under the **MIT** License.
 
 ---
 🔗 GitHub Repo: https://github.com/selvaganesh19/Road-Traffic-Prediction-using-Machine-Learning
-=======
-# Web Machine Learning Application
-
-This project is a web application that utilizes a machine learning model to provide predictions based on user input. The application consists of a frontend built with HTML, CSS, and JavaScript, and a backend powered by Flask that serves the model.
-
-## Project Structure
-
-```
-web-ml-app
-├── frontend
-│   ├── index.html       # Main HTML file for the frontend
-│   ├── css
-│   │   └── style.css    # Styles for the frontend
-│   └── js
-│       └── script.js     # JavaScript code for user interactions
-├── backend
-│   ├── app.py           # Flask application for serving the model
-│   ├── model.h5        # Trained machine learning model
-│   └── requirements.txt  # Python dependencies for the backend
-└── README.md            # Documentation for the project
-```
-
-## Setup Instructions
-
-1. **Clone the repository:**
-   ```
-   git clone <repository-url>
-   cd web-ml-app
-   ```
-
-2. **Set up the backend:**
-   - Navigate to the `backend` directory:
-     ```
-     cd backend
-     ```
-   - Install the required Python packages:
-     ```
-     pip install -r requirements.txt
-     ```
-
-3. **Run the backend server:**
-   ```
-   python app.py
-   ```
-
-4. **Set up the frontend:**
-   - Open the `frontend/index.html` file in a web browser to access the application.
-
-## Usage
-
-- Interact with the frontend to input data for predictions.
-- The frontend will communicate with the backend to retrieve predictions from the machine learning model.
-
-## Contributing
-
-<<<<<<< HEAD
-Feel free to submit issues or pull requests for improvements or bug fixes.
->>>>>>> 1165131 (Add enhanced traffic prediction web application)
-=======
-Feel free to submit issues or pull requests for improvements or bug fixes.
->>>>>>> origin/master
