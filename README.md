@@ -24,7 +24,7 @@ Predict road traffic patterns using powerful machine learning techniques. This p
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/Road-Traffic-Prediction-using-Machine-Learning.git
+   git clone https://github.com/selvaganesh19/Road-Traffic-Prediction-using-Machine-Learning.git
    cd Road-Traffic-Prediction-using-Machine-Learning
    ```
 
